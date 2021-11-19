@@ -12,7 +12,7 @@ import "@fontsource/montserrat/500.css"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <ChakraProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Landing/>}/>
