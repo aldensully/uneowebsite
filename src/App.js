@@ -15,7 +15,7 @@ function App() {
     <Router basename="/">
       <ChakraProvider theme={theme}>
       <Routes>
-        <Route path="/" element={<Landing/>}/>
+        <Route path="/" exact element={<Landing/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/platform" element={<Platform/>}/>
         <Route path="/contact" element={<Contact/>}/>
