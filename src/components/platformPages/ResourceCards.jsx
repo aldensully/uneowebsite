@@ -1,15 +1,8 @@
-import {Flex,Box,Text,Heading,Image,Spacer} from '@chakra-ui/react';
-import { motion,useMotionValue,useTransform } from 'framer-motion';
+import {Flex,Text,Heading,Image} from '@chakra-ui/react';
+import { motion} from 'framer-motion';
 
 
 export default function ResourceCard(props){
-  const x = useMotionValue(200);
-  const y = useMotionValue(200);
-
-  function handleMouse(event) {
-    x.set(event.pageX);
-    y.set(event.pageY);
-  }
 
   return(
     <motion.div whileHover={{scale:1.1}}>

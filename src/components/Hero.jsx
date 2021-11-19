@@ -1,20 +1,13 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 import {
   Box,
-  Button,
   Flex,
   Image,
   Heading,
   Stack,
-  HStack,
-  Text,
-  Spacer,
   useColorModeValue
 } from "@chakra-ui/react"
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
 import LearnMoreButton from "./LearnMoreButton";
 
 export default function Hero({

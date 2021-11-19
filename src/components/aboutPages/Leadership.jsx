@@ -1,5 +1,4 @@
-import { SimpleGrid,Flex,Text, Stack, Heading, useColorModeValue } from '@chakra-ui/react';
-import {AiFillLinkedin} from 'react-icons/ai';
+import { SimpleGrid,Flex, Heading, useColorModeValue } from '@chakra-ui/react';
 import TeamCard from './TeamCard';
 
 export default function Leadership(){

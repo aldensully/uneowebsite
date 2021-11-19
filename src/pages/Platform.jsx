@@ -1,12 +1,10 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import Footer from '../components/Footer';
 import PlatformInfo from '../components/platformPages/PlatformInfo';
-import PlatformVisual from '../components/platformPages/PlatformVisual';
 import PlatformResources from '../components/platformPages/PlatformResources';
 import ProviderPortal from '../components/platformPages/ProviderPortal';
 
-import {Box,Text,Button,Flex,Heading, useColorModeValue, Spacer} from '@chakra-ui/react';
+import {Box,Flex, useColorModeValue} from '@chakra-ui/react';
 
 
 export default function Platform(props){

@@ -1,5 +1,4 @@
-import {Flex,Button,Heading,Stack, Textarea,Input, useColorModeValue} from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import {Button,Stack, Textarea,Input, useColorModeValue} from '@chakra-ui/react';
 import {motion} from 'framer-motion';
 
 export default function Form(){

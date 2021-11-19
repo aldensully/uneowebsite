@@ -1,7 +1,6 @@
 import { Box,Flex,useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import Navbar from '../components/navbar';
-import Footer from '../components/Footer';
 import Mission from '../components/aboutPages/Mission';
 import Leadership from '../components/aboutPages/Leadership';
 

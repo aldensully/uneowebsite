@@ -1,4 +1,4 @@
-import {Box,Flex,Text} from '@chakra-ui/react';
+import {Flex} from '@chakra-ui/react';
 
 export default function Footer(props){
     return(

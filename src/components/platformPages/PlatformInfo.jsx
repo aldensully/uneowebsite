@@ -1,5 +1,5 @@
 import React from 'react';
-import {Flex,Box,Image,VStack,Heading,Text,Stack} from '@chakra-ui/react';
+import {Flex,Box,Image,Heading,Text,Stack} from '@chakra-ui/react';
 
 export default function PlatformInfo(props){
   return(

@@ -1,9 +1,6 @@
 import React from 'react';
-import {Flex,Box,Text,Stack,Heading,useColorModeValue} from '@chakra-ui/react';
+import {Flex,Box,Text,Stack,useColorModeValue} from '@chakra-ui/react';
 import { motion } from "framer-motion"
-import SolutionMini from '../fiber/SolutionMini';
-import DataMini from '../fiber/DataMini';
-import ConsumerMini from '../fiber/ConsumerMini';
 
 export default function BottomHero(props){
   const cardBg = useColorModeValue("#eee","#222");

@@ -1,6 +1,5 @@
 import React from 'react';
-import {Flex,Box,Button,VStack,Heading,Text,Spacer, HStack,Stack} from '@chakra-ui/react';
-import {motion} from 'framer-motion';
+import {Flex,Heading,Text} from '@chakra-ui/react';
 
 export default function Mission(props){
   return(

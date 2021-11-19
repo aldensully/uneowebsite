@@ -1,9 +1,8 @@
-import {Flex,Box,Text,useColorModeValue} from '@chakra-ui/react';
+import {Flex,Box,Text} from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function NavButtons(props){
-  const colors = ["blue.400","orange.400","teal.300","yellow.400","green.400","purple.400","red.300","pink.400"];
   const underlineColor = "#5D38F1";
   const [current,setCurrent] = React.useState(props.current);
 

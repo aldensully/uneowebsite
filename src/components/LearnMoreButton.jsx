@@ -1,4 +1,4 @@
-import {Flex,Button,Box} from '@chakra-ui/react';
+import {Flex,Box} from '@chakra-ui/react';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowForwardIcon } from '@chakra-ui/icons';

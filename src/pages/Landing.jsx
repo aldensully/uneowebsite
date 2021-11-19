@@ -1,10 +1,8 @@
 import React from 'react';
 import Navbar from '../components/navbar';
-import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import BottomHero from '../components/BottomHero';
 
-import {Box,Text,Button,Flex,Heading, useColorModeValue, Spacer} from '@chakra-ui/react';
+import {Box,Flex,Heading, useColorModeValue} from '@chakra-ui/react';
 import AppFeatures from '../components/appFeaturesPage/AppFeatures';
 import PrivacyFooter from '../components/PrivacyFooter';
 

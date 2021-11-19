@@ -1,8 +1,6 @@
 import React from 'react';
-import {Flex,Box,Button,VStack,Heading,Text, HStack,Stack} from '@chakra-ui/react';
-import {motion} from 'framer-motion';
+import {Flex,Heading} from '@chakra-ui/react';
 import ResourceCard from './ResourceCards';
-import { ResourceCardRotate } from './ResourceCardRotate';
 
 export default function PlatformResources(props){
   return(

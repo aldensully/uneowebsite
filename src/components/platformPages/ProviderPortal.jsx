@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
-import {Flex,Stack,Heading,Text,Box,Button,Image} from '@chakra-ui/react';
+import {Flex,Stack,Heading,Box,Image} from '@chakra-ui/react';
 import {motion} from 'framer-motion';
-import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 
 export default function ProviderPortal(){

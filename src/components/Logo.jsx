@@ -1,4 +1,4 @@
-import { Text,Box,Image,Flex,Heading } from "@chakra-ui/react";
+import { Image,Flex,Heading } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function Logo(props){
