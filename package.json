@@ -10,7 +10,6 @@
     "@fontsource/inter": "^4.5.1",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/rubik": "^4.5.0",
-    "@react-three/fiber": "^7.0.19",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^10.4.9",
     "@testing-library/user-event": "^12.8.3",
