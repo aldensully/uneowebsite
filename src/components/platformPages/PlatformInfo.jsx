@@ -1,11 +1,14 @@
 import React from 'react';
-import {Flex,Box,Image,Heading,Text,Stack} from '@chakra-ui/react';
+import { Flex, Box, Image, Heading, Text, Stack, useColorModeValue } from '@chakra-ui/react';
 
-export default function PlatformInfo(props){
-  return(
+export default function PlatformInfo(props) {
+
+  const bg = useColorModeValue("#fff", "#5D38F1");
+
+  return (
     <Stack
-      spacing={{base:10,md:15,lg:40}}
-      direction={{ base: "column", sm:"column", md: "column",lg:"row" }}
+      spacing={{ base: 10, md: 15, lg: 40 }}
+      direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
       wrap="no-wrap"
       minH="70vh"
       px={14}
@@ -13,11 +16,11 @@ export default function PlatformInfo(props){
       justifyContent="space-around"
       align="center"
     >
-        
-      <Box boxShadow="dark-lg" rounded="full" bg="#5D38F1" w={{ base: "2xs", md: "xs", xl:"md" }}  h={{ base: "2xs", md: "xs", xl:"md" }}>
-        <Image src="phone-hand-fitness_transparent.png"/>
+
+      <Box boxShadow="2xl" rounded="full" bg={bg} w={{ base: "2xs", md: "xs", xl: "md" }} h={{ base: "2xs", md: "xs", xl: "md" }}>
+        <Image src="phone-hand-fitness_transparent.png" />
       </Box>
-      <Flex w={{ base: "xs", md: "sm", xl:"lg" }} flexDir="column" maxW="2xl" alignItems="flex-start" justifyContent="flex-start">
+      <Flex w={{ base: "xs", md: "sm", xl: "lg" }} flexDir="column" maxW="2xl" alignItems="flex-start" justifyContent="flex-start">
         <Heading mb={4} fontSize="5xl">
           What is the Uneo Platform?
         </Heading>
