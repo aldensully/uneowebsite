@@ -9,7 +9,7 @@ export default function LearnMoreButton() {
   const textColor = "#EFECFE";
   return (
     <Flex pt={5} alignItems="center" flexDirection="row">
-      <Link to="/contact">
+      <Link to="/platform">
         <Box onMouseOver={() => setContactHover(true)} onMouseLeave={() => setContactHover(false)} display="flex" flexDir="row" alignItems="center" color={textColor} boxShadow="2xl" bg="#5D38F1" //5D38F1 3c4eff
           _hover={{ bg: "#5D38F1" }} fontSize={{ base: "md", md: "xl" }} rounded="full" py={{ base: 3, md: 4 }} px={{ base: 4, md: 6 }}>
           Learn More

@@ -33,9 +33,9 @@ export default function Landing(props) {
         mb={10}
         {...props}
       >
-        <Text fontSize={{ base: "2xl", md: "3xl" }} mb={10} >
+        {/* <Text fontSize={{ base: "2xl", md: "3xl" }} mb={0} >
           With Uneo You Can...
-        </Text>
+        </Text> */}
         <AppFeatures />
         <PrivacyFooter />
       </Flex>
