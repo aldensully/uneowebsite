@@ -1,4 +1,4 @@
-import React, { Suspense } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import {
   Box,
@@ -6,13 +6,8 @@ import {
   Heading,
   Stack,
   Image,
-  useColorModeValue
 } from "@chakra-ui/react"
 import LearnMoreButton from "./LearnMoreButton";
-
-import Phone from "../fiber/Phone";
-import Chart from "../fiber/Chart";
-import { Canvas, useFrame } from '@react-three/fiber'
 
 export default function Hero({
   title1,
