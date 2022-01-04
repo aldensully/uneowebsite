@@ -17,7 +17,6 @@ function gback(){
     <Box bgGradient="linear(to-b,#FFF6F5,#FBEDFF)">
       <Box position="absolute" rounded="full" w="200" h="200" ml="100" mt="200" bg="#ffd6eb"/>
       <Box position="relative" zIndex="2" bgGradient="linear(to-b,#FFF6F5,#FBEDFF)"w="100%" h="100vh">
-
       </Box>
     </Box>
   )

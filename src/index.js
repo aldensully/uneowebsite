@@ -11,10 +11,7 @@ import "@fontsource/comfortaa/400.css"
 ReactDOM.render(
   <StrictMode>
     <ChakraProvider theme={theme} >
-    <ColorModeScript />
-    <Router>
       <App />
-    </Router>
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
