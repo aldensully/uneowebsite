@@ -40,7 +40,7 @@ export default function Simple() {
             color="white"
           />
           <Flex justify="center" align="center">
-            <Image w="48px" src="logo_black.png"/>
+            <Image w="36px" src="logo_black.png"/>
             <Text display={open ? "none":"inherit"}>Uneo</Text>
           </Flex>
             <HStack
@@ -54,7 +54,7 @@ export default function Simple() {
                 <a href="#contact">Contact</a>
                 
             </HStack>
-              <Flex display={open ? "none":"flex"} >
+              <Flex display={{base:"none",md:"flex"}} >
                   <a style={{width:"fit-content"}} href="#contact">
                     <Flex
                       fontSize="14" fontWeight="bold"

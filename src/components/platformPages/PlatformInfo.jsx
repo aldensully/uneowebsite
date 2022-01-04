@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex,HStack,Center,Container, Box, Image, Heading, Text, Stack, useColorModeValue } from '@chakra-ui/react';
+import { Flex,HStack,Center,Container, Box, Image, Heading, Text, Stack,SimpleGrid, useColorModeValue } from '@chakra-ui/react';
 import Mission from '../aboutPages/Mission';
 export default function PlatformInfo(props) {
 
@@ -17,7 +17,7 @@ export default function PlatformInfo(props) {
     >
     <Flex
       mt={{base:"10",md:"20",xl:"20"}}
-      direction={{sm:"column-reverse",md: "column-reverse", lg: "row" }}
+      direction={{base:"column-reverse",sm:"column-reverse",md: "column-reverse", lg: "row" }}
       alignItems="center"
       justifyContent="space-between"
     >
@@ -25,7 +25,7 @@ export default function PlatformInfo(props) {
         <Image src="health_app_placeholder.png"/>
       </Flex>
       <Flex w={{md:"80%",lg:"50%"}} flexDir="column">
-        <Heading color="primaryBlack" fontWeight="regular" alignSelf="flex-start" fontSize="36">
+        <Heading color="primaryBlack" fontWeight="regular" alignSelf="flex-start" fontSize={{base:24,md:36}}>
           About Uneo 
         </Heading>
         <Text textAlign="left" color="primaryBlack" mt="5" alignSelf="flex-start" opacity="80%" fontSize="16">
@@ -40,22 +40,22 @@ export default function PlatformInfo(props) {
         </Text>
       </Flex>
     </Flex>
-      <Flex flexDir={{base:"column",lg:"column"}} mt={{md:"0",lg:"20"}} p={8} justifyContent="space-between" maxW="1200px">
+      <Flex flexDir={{base:"column",lg:"column"}} textAlign="left" mt={{md:"0",lg:"20"}} p={8} justifyContent="space-between" align="center" maxW="1200px">
         <Flex align="center" flexDir="column">
-          <Heading fontSize={{base:36}} color="primaryBlack" fontWeight="regular">The Challenge For Teenagers Is Immense</Heading>
-          <Text mt="5" w={{base:"80%",md:"50%"}} textAlign="left" opacity="75%" fontSize="16">Despite growing concern for the mental and physical well-being of the 40 million teenagers in the United States, nearly all “wellness” apps are focused on adults.</Text>
+          <Heading fontSize={{base:24,md:36}} color="primaryBlack" fontWeight="regular">The Challenge For Teenagers Is Immense</Heading>
+          <Text mt="5" w={{base:"100%",md:"50%"}} textAlign="left" opacity="75%" fontSize="16">Despite growing concern for the mental and physical well-being of the 40 million teenagers in the United States, nearly all “wellness” apps are focused on adults.</Text>
         </Flex>
-        <HStack mt={5} spacing="5" align="center" justifyContent="center">
-          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w="200px" p="5" flexDir="column" rounded="12">
+        <SimpleGrid columns={{base:1,md:3}} mt={5} spacing="5" align="center" justifyContent="center">
+          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w={{base:"180px",sm:"200px"}} p="5" flexDir="column" rounded="12">
             <Box position="absolute" zIndex="2" bg="primaryBlue"/>
             <Flex justifyContent="center" alignItems="flex-end" flexDir="row">
-              <Heading fontSize="48">1</Heading>
-              <Text ml="2" fontSize="24">in</Text>
-              <Heading ml="2" fontSize="48">3</Heading>
+              <Heading fontSize={48}>1</Heading>
+              <Text ml="2" fontSize={24}>in</Text>
+              <Heading ml="2" fontSize={48}>3</Heading>
             </Flex>
             <Text opacity="80%" mt="5">teens are overweight</Text>
           </Flex>
-          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w="200px" p="5" flexDir="column" rounded="12">
+          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w={{base:"180px",sm:"200px"}}  p="5" flexDir="column" rounded="12">
             <Flex justifyContent="center" alignItems="flex-end" flexDir="row">
               <Heading fontSize="48">1</Heading>
               <Text ml="2" fontSize="24">in</Text>
@@ -63,15 +63,15 @@ export default function PlatformInfo(props) {
             </Flex>
             <Text mt="5">teens have prediabetes</Text>
           </Flex>
-          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w="200px" p="5" flexDir="column" rounded="12">
+          <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w={{base:"180px",md:"200px"}} p="5" flexDir="column" rounded="12">
             <Flex justifyContent="center" alignItems="flex-end" flexDir="row">
               <Heading fontSize="48">1</Heading>
               <Text ml="2" fontSize="24">in</Text>
               <Heading ml="2" fontSize="48">3</Heading>
             </Flex>
-            <Text mt="5">teens feel hopeless</Text>
+            <Text mt="5">teens have feelings of sadness or hopelessness</Text>
           </Flex>
-        </HStack>
+        </SimpleGrid>
       </Flex>
 
     </Container>

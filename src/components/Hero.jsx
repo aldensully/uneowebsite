@@ -39,18 +39,18 @@ export default function Hero({
       maxW="1200"
     >
       <Flex
-        flexDir={{base:"column",md:"column",lg:"row"}}
+        flexDir={{base:"column",sm:"column",md:"row",lg:"row"}}
         justify={{md:"center",lg:"space-between"}}
         mt={20}
         align={{sm:"center",md:"center"}}
       >
         <Flex w={{md:"100%",lg:"50%"}} flexDir="column" justifyContent="center" >
         <Heading
-          fontSize={{base:"36",lg:"56"}}
+          fontSize={{base:"24",md:"36",lg:"56"}}
           fontWeight="bold"
           color="#2E2E36"
           wordWrap="break-word"
-          w={{sm:"100%",md:"60%",lg:"100%"}}
+          w={{base:"100%",sm:"50%",md:"60%",lg:"100%"}}
         >
           {title1}
         </Heading>
@@ -71,7 +71,7 @@ export default function Hero({
           <Flex
           fontSize="18"
           bg="primaryBlue" color="white" rounded="full"
-          w={{base:"sm",sm:"200px"}} py="4" 
+          px={12} py="4" 
           justify="center"
           alignItems="center" flexDir="row">
             Learn More

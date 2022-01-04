@@ -11,6 +11,7 @@ import UserJourney from './UserJourney';
 import Statistics from './Statistics';
 import Services from './Services';
 import PlatformResources from '../components/platformPages/PlatformResources';
+import About from './About';
 export default function Landing(props) {
 
   return (
@@ -19,7 +20,8 @@ export default function Landing(props) {
       <Hero />
       <PlatformInfo/>
       <Features2/>
-      <UserJourney/>
+      <About/>
+      {/* <UserJourney/> */}
     </>
   )
 }

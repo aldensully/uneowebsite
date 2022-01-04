@@ -11,10 +11,8 @@ function JourneyBox(props){
 
 export default function UserJourney(){
   return(
-    <Container
-      flexDir="column"
-    >
-      <Flex mt="20" maxW="1200px" flexDir="row" justify="space-evenly">
+    <>
+      <Flex mt="20" maxW="1200px" flexDir="row" align="center" justify="space-evenly">
         <Flex alignSelf="center" justifySelf="center" h="500px" w="50%">
           <Image bg="backgroundBlue" w="90%"/>
         </Flex>
@@ -60,6 +58,6 @@ export default function UserJourney(){
           </VStack>
         </Flex>
       </Flex>
-    </Container>
+    </>
   )
 }

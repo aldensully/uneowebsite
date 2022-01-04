@@ -38,7 +38,7 @@ export default function Features2(){
     >
       <Flex color="primaryBlack" mt="20" justifyContent="space-evenly" flexDir="column" p={8} maxW="1200px">
       <Heading alignSelf="flex-start" fontSize={{base:"36",md:"48"}} fontWeight="regular" textAlign="left">Platform Features</Heading>
-      <Text mt="5" w={{base:"80%",md:"50%"}} alignSelf="flex-start" fontSize="16" opacity="80%" fontWeight="regular">Uneo supports a full range of features to give teens more options and to allow providers the opportunity to build functionalities and a full suite of capabilities to better connect with teens on the app.</Text>
+      <Text mt="5" w={{base:"80%",md:"50%"}} alignSelf="flex-start" fontSize="16" opacity="80%" fontWeight="regular">Uneo supports a full range of features to give teens more options and to allow providers the opportunity to build stronger functionalities within the app.</Text>
       <SimpleGrid mt={{base:"10",md:"20"}} spacing={10} columns={{base:1,sm:1,md:2,lg:2,xl:4}}>
         <Block display="none" title="Goal Setting" body="An interactive, engaging yet simple way for teens to set and manage their goals, supported by nudges and incentives. Milestone progress made easy."/>
         <Block display="normal" title="Resources" body="Easy-to-navigate options including eduactional content, community resources and online coaching to support the well-being goals of teens."/>
