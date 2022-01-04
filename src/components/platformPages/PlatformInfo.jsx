@@ -53,7 +53,7 @@ export default function PlatformInfo(props) {
               <Text ml="2" fontSize={24}>in</Text>
               <Heading ml="2" fontSize={48}>3</Heading>
             </Flex>
-            <Text opacity="80%" mt="5">teens are overweight</Text>
+            <Text color="primaryBlack" opacity="80%" mt="5">teens are overweight</Text>
           </Flex>
           <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w={{base:"180px",sm:"200px"}}  p="5" flexDir="column" rounded="12">
             <Flex justifyContent="center" alignItems="flex-end" flexDir="row">
@@ -61,7 +61,7 @@ export default function PlatformInfo(props) {
               <Text ml="2" fontSize="24">in</Text>
               <Heading ml="2" fontSize="48">5</Heading>
             </Flex>
-            <Text mt="5">teens have prediabetes</Text>
+            <Text color="primaryBlack" opacity="80%" mt="5">teens have prediabetes</Text>
           </Flex>
           <Flex h="200px" bg="white" color="primaryBlue" justify="flex-start" textAlign="center" w={{base:"180px",md:"200px"}} p="5" flexDir="column" rounded="12">
             <Flex justifyContent="center" alignItems="flex-end" flexDir="row">
@@ -69,7 +69,7 @@ export default function PlatformInfo(props) {
               <Text ml="2" fontSize="24">in</Text>
               <Heading ml="2" fontSize="48">3</Heading>
             </Flex>
-            <Text mt="5">teens have feelings of sadness or hopelessness</Text>
+            <Text color="primaryBlack" opacity="80%" mt="5">teens have feelings of sadness or hopelessness</Text>
           </Flex>
         </SimpleGrid>
       </Flex>

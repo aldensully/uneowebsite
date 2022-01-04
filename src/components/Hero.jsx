@@ -41,7 +41,7 @@ export default function Hero({
       <Flex
         flexDir={{base:"column",sm:"column",md:"row",lg:"row"}}
         justify={{md:"center",lg:"space-between"}}
-        mt={20}
+        mt={10}
         align={{sm:"center",md:"center"}}
       >
         <Flex w={{md:"100%",lg:"50%"}} flexDir="column" justifyContent="center" >

@@ -1,25 +1,14 @@
 import React from 'react';
-import { Flex, Heading, Text } from '@chakra-ui/react';
+import { Container, Box, Stack, Flex, Heading, Text } from '@chakra-ui/react';
 
 export default function Mission(props) {
   return (
-
-    <Flex bg="gray.100">
-      <Flex m={{ base: 5, md: 10, xl: 20 }} flexDir="column" alignItems={{ base: "center", sm: "flex-start" }} maxW={{ base: "xs", md: "xs", lg: "md", xl: "xl" }}>
-        <Heading  fontWeight="bold" fontSize="28">
-          Our Mission
-        </Heading>
-        <Text fontWeight="normal" fontSize="20">
-          Deploy a novel, innovative platform that will support teenagers in vulnerable populations by giving them the tools needed to eat better, exercise more, and improve overall wellness.
-        </Text>
-      </Flex>
-      <Flex alignItems={{ base: "center", sm: "flex-start" }} m={{ base: 5, md: 10, xl: 40 }} maxW={{ base: "xs", md: "xs", lg: "md", xl: "3xl" }}>
-        {/* 
-        put video here
-        or maybe an image
-        <Heading fontSize={{ base: "3xl", sm: "4xl", xl: "6xl" }} fontStyle="italic" fontFamily="montserrat-500">
-        </Heading> */}
-      </Flex>
-    </Flex>
+    <Box color="primaryBlack" mt={10} w="100%" align="center" p={10} bg="backgroundBlue">
+      <Stack direction={{base:"column",md:"row"}} spacing={{base:5,md:10}} p={{base:0,md:20}} maxW="1000px" align={{base:"flex-start",md:"center"}}>
+        <Heading color="primaryBlack" textAlign="left">Our Mission</Heading>
+        <Box display={{base:"none",md:"flex"}} w={1} h={20} bg="primaryBlack"/>
+        <Text color="primaryBlack" opactiy="80%" textAlign="left">Provide a novel, innovative platform that will excite, educate and inspire teenagers (especially those in vulnerable populations), giving them the tools they need to improve their overall well-being.</Text>
+      </Stack>
+    </Box>
   )
 }
