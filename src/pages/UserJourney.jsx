@@ -1,4 +1,4 @@
-import { Flex,VStack, Box, Image, Heading, SimpleGrid, Text, Stack, HStack, useColorModeValue } from '@chakra-ui/react';
+import { Container,Flex,VStack, Box, Image, Heading, SimpleGrid, Text, Stack, HStack, useColorModeValue } from '@chakra-ui/react';
 
 function JourneyBox(props){
   return(
@@ -11,13 +11,10 @@ function JourneyBox(props){
 
 export default function UserJourney(){
   return(
-    <Flex
+    <Container
       flexDir="column"
-      alignItems="center"
-      h="100vh"
-      w="100%"
     >
-      <Flex mt="20" w="1200px" flexDir="row" justify="space-evenly">
+      <Flex mt="20" maxW="1200px" flexDir="row" justify="space-evenly">
         <Flex alignSelf="center" justifySelf="center" h="500px" w="50%">
           <Image bg="backgroundBlue" w="90%"/>
         </Flex>
@@ -63,6 +60,6 @@ export default function UserJourney(){
           </VStack>
         </Flex>
       </Flex>
-    </Flex>
+    </Container>
   )
 }

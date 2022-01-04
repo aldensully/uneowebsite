@@ -18,7 +18,6 @@ export default function PlatformInfo(props) {
     <Flex
       mt={{base:"10",md:"20",xl:"20"}}
       direction={{sm:"column-reverse",md: "column-reverse", lg: "row" }}
-      wrap="no-wrap"
       alignItems="center"
       justifyContent="space-between"
     >

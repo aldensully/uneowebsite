@@ -15,6 +15,7 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Image,
   Container
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -38,7 +39,10 @@ export default function Simple() {
             bg="primaryBlue"
             color="white"
           />
-          <Text display={open ? "none":"inherit"}>Logo</Text>
+          <Flex justify="center" align="center">
+            <Image w="48px" src="logo_black.png"/>
+            <Text display={open ? "none":"inherit"}>Uneo</Text>
+          </Flex>
             <HStack
               as={'nav'}
               spacing={8}

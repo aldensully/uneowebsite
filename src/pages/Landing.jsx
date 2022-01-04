@@ -13,17 +13,13 @@ import Services from './Services';
 import PlatformResources from '../components/platformPages/PlatformResources';
 export default function Landing(props) {
 
-  const bg = useColorModeValue('#fff', '#020413'); // 191e25 0D0D2B e0e1dd 3c4eff 020413 040A30
-  const bgGrad = "linear(to-br, #040a30, #0d1c5e)";
-  const textColor = useColorModeValue('#020413', '#eee');
-  const accentTextColor = useColorModeValue('green.400', 'green.400');
   return (
     <>
       <Navbar2/>
       <Hero />
       <PlatformInfo/>
       <Features2/>
-      {/* <UserJourney/> */}
+      <UserJourney/>
     </>
   )
 }
