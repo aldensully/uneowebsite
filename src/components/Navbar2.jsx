@@ -55,7 +55,7 @@ export default function Simple() {
                 
             </HStack>
               <Flex display={{base:"none",md:"flex"}} >
-                  <a style={{width:"fit-content"}} href="#newsletter">
+                  <a style={{width:"fit-content"}} href="#contact">
                     <Flex
                       fontSize="14" fontWeight="bold"
                       py="2" px="4"
@@ -74,7 +74,7 @@ export default function Simple() {
               <a href="#platform">Platform</a>
               <a href="#about">About Us</a>
               <a href="#contact">Contact</a>
-              <Link color="primaryBlue" href="#newsletter">Newsletter</Link>
+              <Link color="primaryBlue" href="#contact">Newsletter</Link>
             </Stack>
           </Flex>
         ) : null}

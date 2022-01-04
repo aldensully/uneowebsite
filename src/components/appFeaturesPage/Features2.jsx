@@ -49,7 +49,7 @@ export default function Features2(){
         <Block icon={<AiOutlineMessage color="#6A8BF5" size="40"/>} display="none" title="Engagement" body="Healthcare providers, health plan care managers, community resources and the teen's own friends are part of a safe, positive, bi-directional support model."/>
         <Block icon={<AiOutlineApi color="#6A8BF5" size="40"/>} display="none" title="Connectivity" body="Built-in wellness decive APIs and provider/health plan connectivity to support teen-mediated information sharing and enabling goal metric data collection."/>
       </SimpleGrid>
-      <a style={{marginTop:100,width:"fit-content",alignSelf:"center"}} href="#newsletter">
+      <a style={{marginTop:100,width:"fit-content",alignSelf:"center"}} href="#contact">
         <Flex bg="primaryBlue" shadow="xl" color="white" rounded="full" p="5" alignSelf="center">Subscribe to Get Updates</Flex>
       </a>
       </Flex>

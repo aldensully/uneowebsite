@@ -17,7 +17,7 @@ import {
 import { PhoneIcon, EmailIcon} from '@chakra-ui/icons';
 export default function contact() {
   return (
-    <Container h="100vh" p={10} id="contact" maxW="1000" mt={0} centerContent overflow="hidden">
+    <Container p={10} id="contact" maxW="1000" mt={0} centerContent overflow="hidden">
       <Heading mt={{base:10,md:20}}>Get In Touch</Heading>
       <Flex align="center" justify="space-between" mt={{base:10,md:20}} flexDir={{base:"column",sm:"column",md:"row"}}>
         <Flex spacing={5} w={{base:"100%",sm:"80%",md:"45%"}} direction="column">
@@ -34,7 +34,7 @@ export default function contact() {
           </Flex>
           </Stack>
         </Flex>
-            <Box id="newsletter" mt={{base:10,sm:10,md:0}} w={{base:"100%",sm:"80%",md:"45%"}} bg="backgroundBlue" borderRadius="lg">
+            <Box mt={{base:10,sm:10,md:0}} w={{base:"100%",sm:"80%",md:"45%"}} bg="backgroundBlue" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={{base:5,md:10}}>
                       <Heading color="primaryBlack" fontSize={{sm:"16",md:"18"}}>Subscribe to Our Newsletter</Heading>

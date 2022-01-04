@@ -41,12 +41,11 @@ export default function Hero({
       <Flex
         flexDir={{base:"column",sm:"column",md:"row",lg:"row"}}
         justify={{md:"center",lg:"space-between"}}
-        mt={10}
         align={{sm:"center",md:"center"}}
       >
         <Flex w={{md:"100%",lg:"50%"}} flexDir="column" justifyContent="center" >
         <Heading
-          fontSize={{base:"24",md:"36",lg:"56"}}
+          fontSize={{base:"36",md:"48",lg:"64"}}
           fontWeight="bold"
           color="#2E2E36"
           wordWrap="break-word"
@@ -100,8 +99,8 @@ Hero.propTypes = {
 }
 
 Hero.defaultProps = {
-  title1: "Designed by Teens - Used by Teens to Be and Stay Well",
-  subtitle: "A personalized, engaging community where teens can set and reach their goals - supported with resources they can trust. ",
+  title1: "Teen Health Reimagined",
+  subtitle: "An engaging community where teens can set and reach their goals - supported with resources they can trust. ",
   image: "hero_placeholder.png",
   ctaText: "Create your account now",
   ctaLink: "/signup",

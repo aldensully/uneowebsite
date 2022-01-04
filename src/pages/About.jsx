@@ -47,7 +47,7 @@ export default function About(props) {
         <Heading fontSize={{base:24,md:36}}>Our Team</Heading>
         <Text maxW={{base:"100%",sm:"80%",lg:"50%"}} mt={2} opacity="80%">Decades of healthcare, technology and community expertise shaping Uneo's journey.</Text>
         <SimpleGrid mt={10} columns={{base:1,sm:2,md:3}}>
-          <MemberCard advisor="" name="Eric Sullivan" title="CEO, Founder" src="ericProfile.png" link="https://www.linkedin.com/in/eric-sullivan-5ab71218/"/>
+          <MemberCard advisor="" name="Eric Sullivan" title="CEO, Founder" src="eric.jpg" link="https://www.linkedin.com/in/eric-sullivan-5ab71218/"/>
           <MemberCard advisor="advisor" name="Dr. Paige Killian" title="CMO, Inovalon" src="paige.png" link="https://www.linkedin.com/in/paige-kilian-57b2798/" />
           <MemberCard advisor="advisor" name="Faisal Khalid" title="CTO, ProgenyHealth" src="faisal.jpg" link="https://www.linkedin.com/in/faisalf/" />
           <MemberCard advisor="advisor" name="Dr. Gordon Gao" title="Univ. Md, Smith School" src="gordon.jpg" link="https://www.linkedin.com/in/guodong-gordon-gao-8994887/" />
