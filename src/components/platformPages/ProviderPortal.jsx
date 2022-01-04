@@ -17,7 +17,7 @@ export default function ProviderPortal() {
         setIndex(index + 1);
       }
       else setIndex(0);
-    }, 2000);
+    }, 1500);
     return () => {
       clearInterval(interval);
     }
@@ -31,10 +31,11 @@ export default function ProviderPortal() {
       wrap="no-wrap"
       minH="70vh"
       px={8}
+      flexGrow={2}
     >
-      <Heading fontSize="4xl">
+      {/* <Heading fontSize="4xl">
         Provider Portal
-      </Heading>
+      </Heading> */}
 
       <Stack
         spacing={{ base: 15, md: 20, lg: 64 }}
@@ -42,18 +43,18 @@ export default function ProviderPortal() {
         align="center"
         my={20}
       >
-        <Box w={{ base: "2xs", md: "xs", xl: "md" }} h={{ base: "2xs", md: "xs", xl: "md" }}>
+        {/* <Box w={{ base: "2xs", md: "xs", xl: "md" }} h={{ base: "2xs", md: "xs", xl: "md" }}>
           <Image src="handshake-outline.png" />
-        </Box>
+        </Box> */}
         <Flex w={{ base: "xs", md: "sm", xl: "md" }} flexDir="column" maxW="2xl" alignItems="center" >
           <Heading fontSize={{ base: "3xl", md: "4xl", xl: "5xl" }}>
             Wondering How You Can Get Involved?
           </Heading>
-          <Flex flexDir="row">
+          <Flex mt={20} flexDir="row">
             <Box my={10}>
               <Link to="/contact">
                 <motion.button whileHover={{ scale: 1.1 }}>
-                  <Box color={buttonTextColor} display="flex" flexDir="row" alignItems="center" boxShadow="2xl" bg="#5D38F1"
+                  <Box color={buttonTextColor} display="flex" flexDir="row" alignItems="center" boxShadow="xl" bg="#5D38F1"
                     fontSize={{ base: "md", xl: "xl" }} rounded="full" py={{ base: 3, md: 5 }} px={{ base: 4, md: 8 }}>
                     Contact Us
                   </Box>
@@ -63,7 +64,7 @@ export default function ProviderPortal() {
             <Box ml={10} my={10}>
               <Link to="/contact">
                 <motion.button whileHover={{ scale: 1.1 }}>
-                  <Box textColor={buttonTextColor} display="flex" flexDir="row" alignItems="center" boxShadow="2xl" bg="#F56565"
+                  <Box textColor={buttonTextColor} display="flex" flexDir="row" alignItems="center" boxShadow="xl" bg="#F56565"
                     fontSize={{ base: "md", xl: "xl" }} rounded="full" py={{ base: 3, md: 5 }} px={{ base: 4, md: 8 }}>
                     Provider Portal
                   </Box>
@@ -85,7 +86,7 @@ export default function ProviderPortal() {
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
           >
-            <Heading fontSize="4xl" color="#20CCC1"  >
+            <Heading fontSize="4xl" color="#5D38F1"  >
               {words[index]}
             </Heading>
           </motion.div>
@@ -94,7 +95,7 @@ export default function ProviderPortal() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
           >
-            <Heading fontSize="4xl" color="#20CCC1"  >
+            <Heading fontSize="4xl" color="#5D38F1"  >
               {words[index]}
             </Heading>
           </motion.div>

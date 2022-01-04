@@ -1,28 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ChakraProvider } from '@chakra-ui/react';
+import { Routes, Route,Switch } from "react-router-dom";
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import theme from './components/theme';
 import Platform from './pages/Platform'
-import "@fontsource/rubik/300.css"
-import "@fontsource/inter/700.css"
-import "@fontsource/montserrat/500.css"
+import Navbar from './components/navbar';
+import Test from './pages/Test';
+import Navbar2 from './components/Navbar2';
 
 function App() {
-
   return (
-    <ChakraProvider theme={theme}>
-      <Router basename="/">
-        <Routes>
-          <Route path="/" exact element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/platform" element={<Platform />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
-    </ChakraProvider>
+    <>
+      <Landing/>
+        {/* <Switch>
+          <Route path="/" exact ><Landing/></Route>
+          <Route path="/about"><About/></Route>
+          <Route path="/platform"><Platform/></Route>
+          <Route path="/contact"><Contact/></Route>
+        </Switch> */}
+    </>
   );
 }
 

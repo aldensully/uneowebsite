@@ -9,7 +9,7 @@ export default function Form() {
 
   return (
     <Stack spacing={5} boxShadow="2xl" rounded="3xl"
-      w={{ base: "250px", sm: "350px", xl: "400px" }} h={{ base: "480px", xl: "480px" }}
+      w={{ base: "250px", sm: "350px", xl: "400px" }} h={{ base: "340px", xl: "480px" }}
       flexDir="column" alignItems="center" p={4} bg={bg} color={textColor}
     >
       <Input focusBorderColor={focusColor} size="lg" boxShadow="md" rounded="3xl" variant="filled" placeHolder="Name" />

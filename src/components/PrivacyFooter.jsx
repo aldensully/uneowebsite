@@ -7,11 +7,11 @@ import React from 'react';
 export default function PrivacyFooter() {
   const [contactHover, setContactHover] = React.useState(false);
   const buttonTextColor = useColorModeValue("#eee", "#eee");
-
+  const bg = useColorModeValue("#fff","#5D38F1");
   return (
     <Flex onMouseOver={() => setContactHover(true)}
       onMouseLeave={() => setContactHover(false)} pt={5}
-      alignItems="center" flexDirection="row" mb={5}>
+      alignItems="center" flexDirection="row">
       <Heading mr={4} fontWeight="normal" fontSize={{ base: "md", md: "xl" }} >
         Your privacy is our priority.
       </Heading>

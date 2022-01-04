@@ -24,7 +24,6 @@ export default function Contact(props) {
         m="0 auto"
         {...props}
       >
-        <Navbar current="contact" />
         <Flex mt={10} mb={40} w={{ base: "450px", md: "800px", xl: "1000px" }} alignItems="center" justifyContent="space-between" flexDir={{ base: "column", lg: "row" }}>
           <Info />
           <Form />

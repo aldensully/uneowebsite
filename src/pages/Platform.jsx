@@ -24,7 +24,6 @@ export default function Platform(props) {
         m="0 auto"
         {...props}
       >
-        <Navbar current="platform" />
         <PlatformInfo />
         <PlatformResources />
       </Flex>

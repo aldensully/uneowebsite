@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function TeamCard(props) {
   const textColor = useColorModeValue('#020413', '#eee');
-  const bg = useColorModeValue("#fff", "#040825");
+  const bg = useColorModeValue("#fff", "#10053E"); //3A59E4 040825
   return (
     <motion.div whileHover={{ scale: 1.1 }}>
       <Flex bg={bg} color={textColor} p={4} h={{ base: "275px", md: "300px" }} rounded="xl" boxShadow="xl" justifyContent="center" alignItems="center" flexDir="column" >

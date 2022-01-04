@@ -9,36 +9,47 @@ export default function NavButtons(props) {
   return (
     <>
       <Flex flexDir="column" p={2} alignItems="center" rounded="lg" borderRadius="0px" m={5}>
-        <Link to="/">
-          <Text fontSize="lg">
+        <a href="#home">
+          <Text fontSize="16">
             Home
           </Text>
-        </Link>
+        </a>
         <Box h="2px" w="8px" bgColor={current == "home" ? underlineColor : "none"} />
       </Flex>
       <Flex flexDir="column" alignItems="center" p={2} rounded="lg" borderRadius="0px" m={5}>
-        <Link to="/platform">
-          <Text fontSize="lg">
+        <a href="#platform">
+          <Text >
             Platform
           </Text>
-        </Link>
+        </a>
         <Box h="2px" w="8px" bgColor={current == "platform" ? underlineColor : "none"} />
       </Flex>
       <Flex flexDir="column" alignItems="center" p={2} rounded="lg" borderRadius="0px" m={5}>
-        <Link to="/about">
-          <Text fontSize="lg">
+        <a href="#about">
+          <Text>
             About Us
           </Text>
-        </Link>
+        </a>
         <Box h="2px" w="8px" bgColor={current == "about" ? underlineColor : "none"} />
       </Flex>
       <Flex flexDir="column" alignItems="center" p={2} rounded="lg" borderRadius="0px" m={5}>
-        <Link to="/contact">
-          <Text fontSize="lg">
+        <a href="#contact">
+          <Text >
             Contact
           </Text>
-        </Link>
+        </a>
         <Box h="2px" w="8px" bgColor={current == "contact" ? underlineColor : "none"} />
+      </Flex>
+      <Flex justifySelf="flex-end" alignSelf="center">
+        <a style={{width:"fit-content"}} href="#contact">
+          <Flex
+          fontSize="14" fontWeight="bold"
+          py="2" px="4"
+          bg="primaryBlue" color="white" rounded="full" 
+          alignItems="center">
+            Newsletter
+          </Flex>
+        </a>
       </Flex>
     </>
   )

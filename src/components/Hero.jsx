@@ -4,10 +4,24 @@ import {
   Box,
   Flex,
   Heading,
-  Stack,
+  HStack,
   Image,
+  Text,
+  Button,
+  Container
 } from "@chakra-ui/react"
-import LearnMoreButton from "./LearnMoreButton";
+import { ArrowForwardIcon } from '@chakra-ui/icons';
+
+function gback(){
+  return(
+    <Box bgGradient="linear(to-b,#FFF6F5,#FBEDFF)">
+      <Box position="absolute" rounded="full" w="200" h="200" ml="100" mt="200" bg="#ffd6eb"/>
+      <Box position="relative" zIndex="2" bgGradient="linear(to-b,#FFF6F5,#FBEDFF)"w="100%" h="100vh">
+
+      </Box>
+    </Box>
+  )
+}
 
 export default function Hero({
   title1,
@@ -20,51 +34,60 @@ export default function Hero({
 }) {
 
   return (
-    <Flex
-      align="center"
-      justify={{ base: "center", md: "space-around", xl: "space-between" }}
-      direction={{ base: "column-reverse", md: "row" }}
-      wrap="no-wrap"
-      minH="70vh"
-      px={8}
-      mb={16}
-      {...rest}
+    <Container
+      id="home"
+      p={8}
+      maxW="1200"
     >
-      <Stack
-        spacing={8}
-        w={{ base: "95%", sm: "60%", md: "60%" }}
-        align={["center", "center", "flex-start", "flex-start"]}
+      <Flex
+        flexDir={{base:"column",md:"column",lg:"row"}}
+        justify={{md:"center",lg:"space-between"}}
+        mt={20}
+        align={{sm:"center",md:"center"}}
       >
+        <Flex w={{md:"100%",lg:"50%"}} flexDir="column" justifyContent="center" >
         <Heading
-          fontSize={{ base: "3xl", md: "5xl", xl: "6xl" }}
-          size="3xl"
-          fontWeight="normal"
-          textAlign={["center", "center", "left", "left"]}
+          fontSize={{base:"36",lg:"56"}}
+          fontWeight="bold"
+          color="#2E2E36"
           wordWrap="break-word"
+          w={{sm:"100%",md:"60%",lg:"100%"}}
         >
           {title1}
-          <br />
-          {title2}
         </Heading>
-        <Heading
-          opacity="0.9"
-          fontSize={{ base: "sm", md: "lg", lg: "xl" }}
-          fontWeight="normal"
-          lineHeight={1.5}
-          textAlign={["center", "center", "left", "left"]}
+        <Text
+          color="primaryBlack"
+          mt="5"
+          opacity="0.8"
+          fontSize="18"
+          fontWeight="bold"
+          w="90%"
+          textAlign="flex-start"
         >
           {subtitle}
-        </Heading>
+        </Text>
 
-        <LearnMoreButton />
+      <Flex mt="10" alignSelf={{base:"center",lg:"flex-start"}}>
+        <a style={{backgroundColor:"primaryBlue",width:"fit-content"}} href="#platform">
+          <Flex
+          fontSize="18"
+          bg="primaryBlue" color="white" rounded="full"
+          w={{base:"sm",sm:"200px"}} py="4" 
+          justify="center"
+          alignItems="center" flexDir="row">
+            Learn More
+          </Flex>
+        </a>
+      </Flex>
+      </Flex>
 
-      </Stack>
+      <Box rounded="50" w={{sm:"60%",md:"60%",lg:"45%"}} p={10} align="center" justify="center">
+          <Image src={image} />
+        </Box>
 
-      <Box ml={{ base: "0%", md: "70px" }} w={{ base: "80%", sm: "40%", md: "50%" }} mb={{ base: 12, md: 0 }}>
-        <Image src={image} />
-      </Box>
+      </Flex>
 
-    </Flex>
+    </Container>
   )
 }
 
@@ -78,11 +101,9 @@ Hero.propTypes = {
 }
 
 Hero.defaultProps = {
-  title1: "Access Community Resources.",
-  title2: "Reach Your Goals.",
-  subtitle:
-    "Connecting wellness experts, community organizations, and health providers to teens through a secure and user-friendly app.",
-  image: "heroRender.png",
+  title1: "Designed by Teens - Used by Teens to Be and Stay Well",
+  subtitle: "A personalized, engaging community where teens can set and reach their goals - supported with resources they can trust. ",
+  image: "hero_placeholder.png",
   ctaText: "Create your account now",
   ctaLink: "/signup",
 }
