@@ -28,29 +28,29 @@ export default function UserJourney(){
             <br/>
             How can they leverage Uneo to set and reach that goal?
           </Text>
-          <VStack spacing="8" mt="10">
-            <Flex>
+          <Flex flexDir="column" spacing="8" mt="10">
+            <Flex mt={5}>
               <Flex alignSelf="center" alignItems="center" justifyContent="center" rounded="full" w="10" h="10" color="white" bg="primaryBlue">1</Flex>
               <Flex color="primaryBlack" ml="5" w="90%" flexDir="column">
                 <Text fontSize={{base:"16",md:"18"}} fontWeight="bold">Set The Goal With Milestones</Text>
                 <Text fontSize="16" opacity="80%">Uneo provides for a selection of personalized goals that include achievable milestones.</Text>
               </Flex>
             </Flex>
-            <Flex>
+            <Flex mt={5}>
               <Flex alignSelf="center" align="center" justify="center" rounded="full" w="10" h="10" bg="primaryBlue" color="white">2</Flex>
               <Flex ml="5" w="90%" flexDir="column">
                 <Text fontSize={{base:16,md:18}} fontWeight="bold">Access Resources To Reach Those Goals</Text>
                 <Text fontSize="16" opacity="80%">Uneo's personalized, curated online library of trused eduactional materials and community-based resources supports goal progress.</Text>
               </Flex>
             </Flex>
-            <Flex>
+            <Flex mt={5} >
               <Flex align="center" justify="center" alignSelf="center" rounded="full" w="10" h="10" color="white" bg="primaryBlue">3</Flex>
               <Flex ml="5" w="90%" flexDir="column">
                 <Text fontSize={{base:16,md:18}} fontWeight="bold">Receive Incentives And Motivation</Text>
                 <Text fontSize="16" opacity="80%">Uneo leverages community-based incentives and appropriate gamification as well as carefully delivered reminders to the user reach their milestones.</Text>
               </Flex>
             </Flex>
-            <Flex >
+            <Flex mt={5} >
               <Flex align="center" justify="center" alignSelf="center" rounded="full" w="10" h="10" color="white" bg="primaryBlue">4</Flex>
               <Flex ml="5" w="90%" flexDir="column">
                 <Text fontSize={{base:16,md:18}} fontWeight="bold">Connect With Providers To Gain Support</Text>
@@ -58,7 +58,7 @@ export default function UserJourney(){
               </Flex>
             </Flex>
 
-          </VStack>
+          </Flex>
         </Flex>
       </Stack>
     </Container>
