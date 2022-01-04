@@ -28,7 +28,7 @@ export default function Simple() {
       zIndex="2"
       sx={{position:"-webkit-sticky", position:'sticky',top:0}}
       display={open ? "inherit":"flex"} justifyContent="center" w="100%"> 
-        <Flex w={1200} p={4} align="center" justify="space-between" h={20} >
+        <Flex w={1200} p={10} align="center" justify="space-between" h={20} >
           <IconButton
             size={'md'}
             icon={open ? <CloseIcon /> : <HamburgerIcon />}
@@ -41,7 +41,7 @@ export default function Simple() {
           />
           <Flex justify="center" align="center">
             <Image w="36px" src="logo_black.png"/>
-            <Text display={open ? "none":"inherit"}>Uneo</Text>
+            <a href="#home" display={open ? "none":"inherit"}>Uneo</a>
           </Flex>
             <HStack
               as={'nav'}
