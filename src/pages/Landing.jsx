@@ -21,10 +21,10 @@ export default function Landing(props) {
       <Hero />
       <PlatformInfo/>
       <Features2/>
+      <UserJourney/>
       <About/>
       <Mission/>
       <Contact/>
-      {/* <UserJourney/> */}
     </>
   )
 }

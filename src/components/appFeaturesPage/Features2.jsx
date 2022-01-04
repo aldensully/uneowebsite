@@ -38,7 +38,6 @@ export default function Features2(){
       justify="center"
       bg="backgroundBlue"
       w="100%"
-      pb={20}
     >
       <Flex color="primaryBlack" mt="20" justifyContent="space-evenly" flexDir="column" p={8} maxW="1200px">
       <Heading alignSelf="flex-start" fontSize={{base:"36",md:"48"}} fontWeight="regular" textAlign="left">Platform Features</Heading>

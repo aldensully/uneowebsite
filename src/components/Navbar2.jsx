@@ -25,7 +25,7 @@ export default function Simple() {
   const [open,setOpen] = useState(false);
   return (
       <Box bg="white" 
-      zIndex="2"
+      zIndex="5"
       sx={{position:"-webkit-sticky", position:'sticky',top:0}}
       display={open ? "inherit":"flex"} justifyContent="center" w="100%"> 
         <Flex w={1200} p={10} align="center" justify="space-between" h={20} >
@@ -69,12 +69,12 @@ export default function Simple() {
 
         {open ? (
           <Flex alignItems="center" bg="gray.100" p={4} display={{ md: 'none' }}>
-            <Stack onClick={()=>setOpen(false)} alignItems="center" as={'nav'} spacing={4}>
-              <a href="#home">Home</a>
-              <a href="#platform">Platform</a>
-              <a href="#about">About Us</a>
-              <a href="#contact">Contact</a>
-              <Link color="primaryBlue" href="#contact">Newsletter</Link>
+            <Stack alignItems="center" as={'nav'} spacing={4}>
+              <a onClick={()=>setOpen(false)} href="#home">Home</a>
+              <a onClick={()=>setOpen(false)} href="#platform">Platform</a>
+              <a onClick={()=>setOpen(false)} href="#about">About Us</a>
+              <a onClick={()=>setOpen(false)} href="#contact">Contact</a>
+              <Link onClick={()=>setOpen(false)} color="primaryBlue" href="#contact">Newsletter</Link>
             </Stack>
           </Flex>
         ) : null}
